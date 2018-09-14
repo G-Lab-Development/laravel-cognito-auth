@@ -1,5 +1,7 @@
 # Laravel Package to easily manage authentication with AWS Cognito
 
+
+
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/black-bits/laravel-cognito-auth.svg?style=flat-square)](https://packagist.org/packages/black-bits/laravel-cognito-auth)
 [![Total Downloads](https://img.shields.io/packagist/dt/black-bits/laravel-cognito-auth.svg?style=flat-square)](https://packagist.org/packages/black-bits/laravel-cognito-auth)
 [![StyleCI](https://styleci.io/repos/137779073/shield)](https://styleci.io/repos/137779073)
@@ -20,15 +22,32 @@ Currently we have the following features implemented in our package:
 - Reset User Password
 - Confirm Sign Up
 
+## Fork
+This porject is forked from black-bits/laravel-cognito-auth.
+
 ### Disclaimer
 _This package is currently in development and is not production ready._
 
 ## Installation
 
+Since this project is **forked** (from black-bits/laravel-cognito-auth) you have to add repository url
+to your `composer.json`.
+
+```
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/G-Lab-Development/laravel-cognito-auth.git"
+        }
+    ],
+
+```
+
+
 You can install the package via composer.
 
 ```bash
-composer require black-bits/laravel-cognito-auth
+composer require G-Lab-Development/laravel-cognito-auth
 ```
 
 #### Laravel 5.4 and before
@@ -243,6 +262,8 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 If you discover any security related issues, please email [hello@blackbits.io](mailto:hello@blackbits.io) instead of using the issue tracker.
 
 ## Credits
+
+Developers of the original project:
 
 - [Oliver Heck](https://github.com/oheck)
 - [Andreas Przywara](https://github.com/aprzywara)
